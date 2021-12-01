@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,124 @@
 body {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0C4E8C;
+  color: #CCF1CD;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.brand span {
+  color: #11C4D4;
+}
+
+.menu {
+  display: flex;
+  width: 50% ;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu .active {
+  color: #11C4D4;
+}
+
+.menu a:hover {
+  background-color: #4FE7AF;
+  color: #0C4E8C;
+  transition: ease-in .4s;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span {
+  color: #11C4D4;
+}
+
+.download-cv {
+  padding: 10px 20px;
+  background-color: #4FE7AF;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .6);
+}
+
+.download-cv:hover {
+  background-color: white;
+  box-shadow: none; /* No entendi */ 
+}
+
+.main img {
+  width: 350px;
+  border: 7px solid #4FE7AF;
+  height: 480px;
+}
+
+.about img {
+  width: 50vw;
+  height: 100vh;
+  padding: 10px;
+  grid-column: 1/5;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 2em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: #0C4E8C;
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: #11C4D4;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.about p{
+  margin-bottom: 1em;
 }
