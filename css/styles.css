@@ -100,7 +100,6 @@ span {
 .about img {
   width: 50vw;
   height: 100vh;
-  padding: 10px;
   grid-column: 1/5;
 }
 .about {
@@ -108,6 +107,7 @@ span {
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
   align-items: center;
+  background-color: #CCF1CD;
 }
 
 .about-info {
@@ -203,4 +203,96 @@ span {
   width: 100%;
   justify-content: center;
   margin-top: 1em;
+}
+
+.contact-section {
+  background-color: #CCF1CD;
+}
+
+.container-contact {
+  padding: 3em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.container-contact img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.contact-headings h2 {
+  font-size: 3em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #CCF1CD;
+  color: #CCF1CD;
+}
+
+.form textarea {
+  height: 150px;
+  background: none;
+  color: #CCF1CD;
+  padding: 1.5em;
+  border: 1px solid #CCF1CD;
+}
+
+.btn-sumbit {
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: #11C4D4;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .6);
+}
+
+.btn-sumbit:hover {
+  background-color: #CCF1CD;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: #4FE7AF;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+}
+
+.social-net {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.social-net i {
+  font-size: 1.5em;
 }
