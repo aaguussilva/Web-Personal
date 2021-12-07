@@ -36,27 +36,42 @@ body {
 .menu {
   display: flex;
   width: 50% ;
-  justify-content: space-around;
+  justify-content: space-around;  
+  transform: translate(-10%,-40%);
 }
 
 .menu li {
   list-style: none;
 }
 
-.menu a{
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
-.menu .active {
+.menu a {
+  position: relative;
+  display: block;
   color: #11C4D4;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px 0;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
 }
 
-.menu a:hover {
-  background-color: #4FE7AF;
-  color: #0C4E8C;
-  transition: ease-in .4s;
+.menu a::before{
+  background: #CCF1CD;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  height: 100%;
+}
+
+.menu a:hover::before{
+  width: 100%;
 }
 
 .main {
